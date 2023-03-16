@@ -47,7 +47,7 @@ for (let i = 1; i <= 5; i++) {
 //#3.1 – Repeatedly print the value of the variable xValue, decreasing it by 0.5 each time,as long as xValue remains positive.
 
 let xValue = 10;
-let x = 0.5;
+let x = 0;
 while (x < xValue) {
     if (xValue > 0) {
         console.log(xValue);
@@ -69,5 +69,22 @@ while (i <= 100) {
     
 
 //#3.3
+let loopNum = (num) => {
+    let i = 1;
+    while (i <= num) {
+        let x = i;
+        console.log(`[${x}]`);
+        i++;
+    }
+}
+loopNum(6);
 
 //#3.4
+let n = 5;
+let sum = 0;
+let j = 1;
+while (j <= n) {
+    sum += j;
+    j++;
+}
+console.log(sum);
